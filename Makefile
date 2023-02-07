@@ -17,6 +17,9 @@ pb:
 tidy:
 		go mod tidy
 
+sql:
+		sqlc generate
+
 clean:
 		rm -rf bin
 

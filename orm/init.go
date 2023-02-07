@@ -2,6 +2,7 @@ package orm
 
 import (
 	"embed"
+	"jw.bill/orm/gen"
 
 	"jw.lib/migrate"
 	"jw.lib/sqlx"
@@ -10,7 +11,7 @@ import (
 //go:embed migration/*.sql
 var migration embed.FS
 
-//var Q *gen.Queries
+var Q *gen.Queries
 
 func init() {
 	cm := sqlx.PGConfigMap

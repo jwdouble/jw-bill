@@ -4,7 +4,10 @@ go 1.19
 
 replace jw.lib => ../jw_lib
 
-require jw.lib v0.0.0-00010101000000-000000000000
+require (
+	github.com/lib/pq v1.10.4
+	jw.lib v0.0.0-00010101000000-000000000000
+)
 
 require (
 	github.com/cespare/xxhash/v2 v2.1.2 // indirect
@@ -15,7 +18,6 @@ require (
 	github.com/hashicorp/errwrap v1.1.0 // indirect
 	github.com/hashicorp/go-multierror v1.1.1 // indirect
 	github.com/hashicorp/hcl v1.0.0 // indirect
-	github.com/lib/pq v1.10.4 // indirect
 	github.com/magiconair/properties v1.8.6 // indirect
 	github.com/mitchellh/mapstructure v1.4.3 // indirect
 	github.com/pelletier/go-toml v1.9.4 // indirect
